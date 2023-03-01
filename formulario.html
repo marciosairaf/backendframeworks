@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" type="text/css" href="./style/style.css" media="screen">
+
+</head>
+<body>
+    
+<main>
+    <form>
+        
+        <h1>Formulário de Cadastro</h1>
+
+        <label for="NomeSobrenome">Nome e Sobrenome:</label>
+        <input type="text" id="NomeSobrenome" class="input-padrao" required>
+            
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+        <label for="CPF">CPF:</label>
+        <input type="text" id="CPF" class="input-padrao" required placeholder="XXX.XXX.XXX-XX">
+
+        <label for="Telefone">Telefone:</label>
+        <input type="tel" id="Telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+        <label for="Senha">Senha:</label>
+        <input type="password" id="Senha" class="input-padrao" required>
+
+        <fieldset>
+            <legend>Sexo:</legend>
+            <label for="radio-sexo"><input type="radio" name="Sexo" value="Feminino" id="radio-sexo">Feminino</label>
+            
+            <label for="radio-sexo"><input type="radio" name="Sexo" value="Masculino" id="radio-sexo">Masculino</label>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" id="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+
+        <input type="submit" value="Cadastrar" class="cadastrar">
+    </form>
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
